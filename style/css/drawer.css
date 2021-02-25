@@ -1,0 +1,157 @@
+.oasis-drawer {
+  width: 0;
+}
+.oasis-drawer .drawer-content {
+  width: 100%;
+  height: 100%;
+}
+.oasis-drawer .drawer-wrapper-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+.oasis-drawer.drawer-portal {
+  position: fixed;
+  z-index: 1000;
+}
+.oasis-drawer.drawer-portal.drawer-top {
+  top: 0;
+  left: 0;
+}
+.oasis-drawer.drawer-portal.drawer-bottom {
+  bottom: 0;
+  left: 0;
+}
+.oasis-drawer.drawer-portal.drawer-left {
+  top: 0;
+  left: 0;
+}
+.oasis-drawer.drawer-portal.drawer-right {
+  top: 0;
+  right: 0;
+}
+.oasis-drawer.drawer-top {
+  width: 100%;
+}
+.oasis-drawer.drawer-top .drawer-content-wrapper {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  transform: translateY(-100%);
+}
+.oasis-drawer.drawer-bottom {
+  width: 100%;
+}
+.oasis-drawer.drawer-bottom .drawer-content-wrapper {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  transform: translateY(100%);
+}
+.oasis-drawer.drawer-left {
+  height: 100%;
+}
+.oasis-drawer.drawer-left .drawer-content-wrapper {
+  top: 0;
+  left: 0;
+  width: 256px;
+  height: 100%;
+  transform: translateX(-100%);
+}
+.oasis-drawer.drawer-right {
+  height: 100%;
+}
+.oasis-drawer.drawer-right .drawer-content-wrapper {
+  top: 0;
+  right: 0;
+  width: 256px;
+  height: 100%;
+  transform: translateX(100%);
+}
+.oasis-drawer .drawer-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+}
+.oasis-drawer .drawer-content-wrapper {
+  position: absolute;
+  transition: transform 0.3s cubic-bezier(0.7, 0.3, 0.1, 1);
+}
+.oasis-drawer.drawer-open {
+  width: 100%;
+  height: 100%;
+}
+.oasis-drawer.drawer-open .drawer-mask {
+  background: rgba(0, 0, 0, 0.5);
+}
+.oasis-drawer.drawer-top.drawer-open .drawer-content-wrapper {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  transform: translateY(0%);
+}
+.oasis-drawer.drawer-bottom.drawer-open .drawer-content-wrapper {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  transform: translateY(0%);
+}
+.oasis-drawer.drawer-left.drawer-open .drawer-content-wrapper {
+  top: 0;
+  left: 0;
+  width: 256px;
+  height: 100%;
+  transform: translateX(0%);
+}
+.oasis-drawer.drawer-right.drawer-open .drawer-content-wrapper {
+  top: 0;
+  right: 0;
+  width: 256px;
+  height: 100%;
+  transform: translateX(0%);
+}
+.oasis-drawer .drawer-close {
+  right: 15px;
+  top: 15px;
+  z-index: auto;
+  cursor: pointer;
+  font-size: 14px;
+  position: absolute;
+}
+.oasis-drawer .drawer-close-icon {
+  width: 20px;
+  height: 20px;
+  color: #000;
+}
+.oasis-drawer .drawer-header {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 56px;
+  border-bottom: 1px solid #CCC;
+  color: #000;
+  background-color: #FFF;
+  padding: 16px 24px;
+}
+.oasis-drawer .drawer-body {
+  flex: 1;
+  width: 100%;
+  padding: 16px 24px;
+}
+.oasis-drawer .drawer-footer {
+  box-sizing: border-box;
+  width: 100%;
+  height: 56px;
+  border-bottom: 1px solid #CCC;
+  padding: 16px 24px;
+}
