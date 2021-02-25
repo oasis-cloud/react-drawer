@@ -1,0 +1,36 @@
+{
+  "name": "react-drawer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx sass style/drawer.scss > style/css/drawer.css",
+    "build": "rollup --config && npm run build:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oasis-cloud/react-drawer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oasis-cloud/react-drawer/issues"
+  },
+  "homepage": "https://github.com/oasis-cloud/react-drawer#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@types/react": "^17.0.2",
+    "node-sass": "^5.0.0",
+    "prettier": "2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rollup": "^2.39.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.2"
+  }
+}
